@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-circle">V</div>
+            <div class="logo-text">Vokkaliga</div>
+        </div>
+        <div class="header-right">
+            <div class="profile-icon">&#x1F464;</div>
+            <div class="notification-icon">&#x1F514;</div>
+        </div>
+    </header>
+    <nav>
+        <button class="current-events">Current Events</button>
+    </nav>
+    <div class="search-bar">
+        <label for="country">Search by</label>
+        <select id="country">
+            <option>Select Country</option>
+        </select>
+        <select id="state">
+            <option>Select State</option>
+        </select>
+        <select id="district">
+            <option>Select District</option>
+        </select>
+        <select id="taluk">
+            <option>Select Taluk</option>
+        </select>
+        <button>SEARCH</button>
+        <button>RESET</button>
+    </div>
+    <main>
+        <section class="tasks">
+            <center><h2>My Task</h2></center>
+            <div class="task-cards">
+                <div class="task-card">
+                    <div class="task-icon">&#10004;</div>
+                    <div class="task-count">-</div>
+                    <div class="task-label">Total Approved #</div>
+                </div>
+                <div class="task-card">
+                    <div class="task-icon">&#10067;</div>
+                    <div class="task-count">-</div>
+                    <div class="task-label">Total Pending #</div>
+                </div>
+                <div class="task-card">
+                    <div class="task-icon">&#x274C;</div>
+                    <div class="task-count">-</div>
+                    <div class="task-label">Total Rejection #</div>
+                </div>
+            </div>
+        </section>
+        <section class="members">
+            <center><h2>Total Members</h2></center>
+            <div class="member-cards">
+                <div class="member-card">
+                    <div class="member-icon">&#x1F465;</div>
+                    <div class="member-count">-</div>
+                    <div class="member-label">Total Volunteers #</div>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">&#x1F46E;</div>
+                    <div class="member-count">-</div>
+                    <div class="member-label">Total Admins #</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.current-events').addEventListener('click', function() {
+            window.location.href = 'events.html'; // Redirect to the current events page
+        });
+    </script>
+</body>
+</html>

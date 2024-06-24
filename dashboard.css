@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7c843;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #f7c843;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.logo-text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon, .notification-icon {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+nav {
+    background-color: #f7c843;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.current-events {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: #f7c843;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.search-bar select, .search-bar button {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+section {
+    width: 45%;
+}
+.members{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.35cm;
+}
+.tasks{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.35cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+.task-cards{    
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.member-cards{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} 
+
+.task-card, .member-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;;
+}
+
+.task-icon, .member-icon {
+    font-size: 36px;
+    color: #b8860b;
+}
+
+.task-count, .member-count {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.task-label, .member-label {
+    font-size: 16px;
+}
